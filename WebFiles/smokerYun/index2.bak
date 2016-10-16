@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Sensor Data</title>
+</head>
+<body
+style="background-image: url(http://beavercreek-smokehouse.com/wp-content/themes/Pluto/data/1402773744_bbqfire.jpg); width:800 px;hieght:400 px;">
+<h1 style="color: red;">Smoker Temperature and Set Point<br>
+</h1>
+<table style="color: red;" border="1" cellpadding="1" cellspacing="1">
+<tbody>
+<tr>
+<td>&nbsp;timeStamp&nbsp;</td>
+<td>&nbsp;smokerTemp&nbsp;</td>
+<td>&nbsp;meatTemp&nbsp;</td>
+<td>&nbsp;setPoint&nbsp;</td>
+</tr>
+<?php if($result!==FALSE){
+while($row = mysql_fetch_array($result)) {
+printf("<tr><td> &nbsp;%s </td><td> &nbsp;%s&nbsp; </td><td> &nbsp;%s&nbsp; </td><td> &nbsp;%s&nbsp <td></tr>",
+$row["timeStamp"], $row["smokerTemp"], $row["meatTemp"], $row["setPoint"]);
+}
+mysql_free_result($result);
+mysql_close();
+}
+?>
+</tbody>
+</table>
+<img src="/smokerYun/rrdtool/tempGraph.png" alt="My Graph"> <img
+</body>
+</html>
+
