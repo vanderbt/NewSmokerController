@@ -1,0 +1,17 @@
+                       |
++------------+-----------+------+-----+-------------------+-----------------------------+
+| smokerTemp | int(11)   | YES  |     | NULL              |                             |
+| meatTemp   | int(11)   | YES  |     | NULL              |                             |
+| setTemp    | int(11)   | YES  |     | NULL              |                             |
+| fanSpeed   | int(11)   | YES  |     | NULL              |                             |
+| timeStamp  | timestamp | NO   |     | CURRENT_TIMESTAMP | on update CURRENT_TIMESTAMP |
+| id         | int(11)   | NO   | PRI | NULL              | auto_increment              |
++------------+-----------+------+-----+-------------------+-----------------------------+
++-----------+-----------+------+-----+-------------------+-----------------------------+
+| Field     | Type      | Null | Key | Default           | Extra                       |
++-----------+-----------+------+-----+-------------------+-----------------------------+
+| setTemp   | int(11)   | YES  |     | NULL              |                             |
+| timeStamp | timestamp | NO   |     | CURRENT_TIMESTAMP | on update CURRENT_TIMESTAMP |
+| id        | int(11)   | NO   | PRI | NULL              | auto_increment              |
++-----------+-----------+------+-----+-------------------+-----------------------------+
+
