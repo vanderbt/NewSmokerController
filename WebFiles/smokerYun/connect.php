@@ -1,8 +1,8 @@
 <?php
 function Connection(){
 		$server="localhost";
-		$user="root";
-		$pass="Mike0101";
+		$user="someUser";
+		$pass="somePassword";
 		$db="arduino";
 	   	
 		$connection = mysql_connect($server, $user, $pass);
